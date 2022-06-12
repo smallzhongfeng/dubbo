@@ -3,7 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/001-link-provider/001-link-provider.iml" filepath="$PROJECT_DIR$/001-link-provider/001-link-provider.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/dubbo.iml" filepath="$PROJECT_DIR$/.idea/dubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/002-link-consumer/002-link-consumer.iml" filepath="$PROJECT_DIR$/002-link-consumer/002-link-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/003-interface/003-interface.iml" filepath="$PROJECT_DIR$/003-interface/003-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/004-link-provider/004-link-provider.iml" filepath="$PROJECT_DIR$/004-link-provider/004-link-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/005-link-consumer/005-link-consumer.iml" filepath="$PROJECT_DIR$/005-link-consumer/005-link-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../006-zk-provider/006-zk-provider.iml" filepath="$PROJECT_DIR$/../006-zk-provider/006-zk-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../007-zk-consumer/007-zk-consumer.iml" filepath="$PROJECT_DIR$/../007-zk-consumer/007-zk-consumer.iml" />
     </modules>
   </component>
 </project>

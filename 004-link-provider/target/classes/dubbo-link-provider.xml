@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+
+<!--    -->
+    <dubbo:application name="004-link-provider"/>
+
+<!--    协议名称，端口号默认20880-->
+    <dubbo:protocol name="dubbo" port="20880"/>
+
+    <dubbo:service interface="com.node.dubbo.service.SomeService" registry="N/A"
+                   ref="someServiceImpl" />
+
+    <bean id="someServiceImpl" class="com.node.dubbo.service.impl.SomeServiceImpl"/>
+
+</beans>

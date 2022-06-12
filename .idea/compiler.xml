@@ -7,10 +7,22 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="001-link-provider" />
+        <module name="002-link-consumer" />
+        <module name="007-zk-consumer" />
+        <module name="003-interface" />
+        <module name="005-link-consumer" />
+        <module name="004-link-provider" />
+        <module name="006-zk-provider" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="001-link-provider" target="1.5" />
+      <module name="002-link-consumer" target="1.7" />
+      <module name="003-interface" target="1.7" />
+      <module name="004-link-provider" target="1.5" />
+      <module name="005-link-consumer" target="1.5" />
+      <module name="006-zk-provider" target="1.5" />
+      <module name="007-zk-consumer" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
