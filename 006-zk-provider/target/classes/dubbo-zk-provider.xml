@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <dubbo:application name="006-zk-provider"/>
+    <dubbo:protocol name="dubbo" port="20880"/>
+    <dubbo:registry address="zookeeper://localhost:2181"/>
+<!--    timeout是指提供的服务超时时间，我以为我知道超过这个时间就可能又异常了-->
+    <dubbo:service interface="com.node.dubbo.service.SomeService"
+                   ref="someServiceImpl"
+                   timeout="30000"
+                   version="1.0"
+    />
+    <dubbo:service interface="com.node.dubbo.service.SomeService"
+                   ref="newSomeServiceImpl"
+                   timeout="30000"
+                   version="2.0"
+    />
+    <bean id="someServiceImpl" class="com.node.dubbo.service.impl.SomeServiceImpl"/>
+    <bean id="newSomeServiceImpl" class="com.node.dubbo.service.impl.newSomeServiceImpl"/>
+</beans>
